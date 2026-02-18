@@ -40,6 +40,7 @@ struct OCRProcessor {
 
             request.recognitionLevel = .accurate
             request.usesLanguageCorrection = true
+            request.recognitionLanguages = ["ko-KR", "en-US"]
 
             let handler = VNImageRequestHandler(cgImage: image, options: [:])
 
